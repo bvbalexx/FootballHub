@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-container div.error-message {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    padding: 12px !important;
+    border: 1px solid #f5c6cb !important;
+    border-radius: 5px !important;
+    margin-bottom: 15px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+
+    width: calc(100% - 20px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.login-container .error-message ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-container .error-message li {
+    font-weight: bold;
+    padding: 5px 0;
+}
