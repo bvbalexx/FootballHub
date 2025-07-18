@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.95);
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1E90FF;
+}
+
+.user-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.user-area a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.user-area a:hover {
+    text-decoration: underline;
+}
+
+.btn-logout {
+    background-color: #1E90FF;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #007BFF;
+}
+
+
+.standings-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.standings-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.league-form select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f5f5f5;
+    color: #333;
+    width: 100%;
+}
+
+.standings-table {
+    width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+
+.standings-table th:nth-child(1),
+.standings-table td:nth-child(1) { width: 35px; }
+
+.standings-table th:nth-child(2),
+.standings-table td:nth-child(2) {
+    width: 250px;
+    text-align: left;
+    padding-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.standings-table th:nth-child(n+3),
+.standings-table td:nth-child(n+3) {
+    width: 65px;
+    text-align: center;
+}
+
+.standings-table th,
+.standings-table td {
+    padding: 6px 8px;
+    white-space: nowrap;
+}
+
+
+.standings-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.standings-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.standings-table .position {
+    font-weight: bold;
+}
+
+.standings-table td img {
+    width: 24px;
+    height: 24px;
+
+}
+    tr.champions-league {
+        background-color: rgba(0, 102, 255, 0.15);
+        border-left: 5px solid #0066ff;
+    }
+
+    tr.europa-league {
+        background-color: rgba(255, 165, 0, 0.15);
+        border-left: 5px solid #ffa500;
+    }
+
+    tr.conference-league {
+        background-color: rgba(0, 255, 0, 0.15);
+        border-left: 5px solid #00cc66;
+    }
+
+    tr.relegation {
+        background-color: rgba(255, 0, 0, 0.15);
+        border-left: 5px solid #ff3333;
+    }
+
+
+    .standings-table tr {
+        transition: background-color 0.2s ease;
+    }
+
+
+    .section-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.toggle-btn.active {
+    background-color: #1E90FF;
+    color: white;
+}
+
+#scorersSection .standings-table th:nth-child(1),
+#scorersSection .standings-table td:nth-child(1) {
+    width: 30px;
+}
+
+#scorersSection .standings-table th:nth-child(2),
+#scorersSection .standings-table td:nth-child(2) {
+    width: 160px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+#scorersSection .standings-table th:nth-child(3),
+#scorersSection .standings-table td:nth-child(3) {
+    width: 180px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+#scorersSection .standings-table th:nth-child(n+4),
+#scorersSection .standings-table td:nth-child(n+4) {
+    width: 70px;
+    text-align: center;
+}
+
+#scorersSection tr:first-child {
+  background-color: rgba(255, 215, 0, 0.2);
+  font-weight: bold;
+}
+
+.league-emblem {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px; 
+    color: white;
+}
+
+.league-logo {
+    height: 120px;
+    object-fit: contain;
+}

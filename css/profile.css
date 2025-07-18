@@ -1,0 +1,173 @@
+/* profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../media/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.navbar {
+    background-color: rgba(51,51,51,0.95);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #1E90FF;
+}
+
+.user-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.user-area a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-logout {
+    background-color: #1E90FF;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.btn-logout:hover {
+    background-color: #007BFF;
+}
+
+.container-profile {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container-profile h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member-duration {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.profile-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-menu {
+    width: 25%;
+    border-right: 2px solid #eaeaea;
+    padding-right: 20px;
+}
+
+.profile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu ul li {
+    margin-bottom: 15px;
+}
+
+.profile-menu ul li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.profile-menu ul li a.active,
+.profile-menu ul li a:hover {
+    background-color: #1E90FF;
+    color: #fff;
+}
+
+.profile-content {
+    width: 75%;
+    padding-left: 10px;
+    min-height: 350px;
+}
+
+.profile-details p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-details strong {
+    color: #222;
+}
+
+/* === Security section buttons, centered === */
+.security-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;    /* center buttons horizontally */
+    margin-top: 20px;
+}
+
+.security-option {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1E90FF;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;         /* ensure centering in case of additional parent constraints */
+    transition: background-color 0.3s;
+}
+
+.security-option:hover {
+    background-color: #007BFF;
+}
